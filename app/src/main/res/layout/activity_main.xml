@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+    <ImageView
+        android:layout_width="287dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="350dp"
+        android:contentDescription="Background pattern"
+        android:scaleType="centerCrop"
+        android:src="@drawable/medical_pattern" />
+
+    <ImageView
+        android:id="@+id/iv_header_pattern"
+        android:layout_margin="0in"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:contentDescription="Medical illustrations pattern"
+        android:scaleType="fitXY"
+        android:src="@drawable/medicalpattern" />
+
+    <Button
+        android:id="@+id/btn_hospital_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_header_pattern"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_button_red"
+        android:backgroundTint="@color/red"
+        android:padding="15dp"
+        android:text="Hospital Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_login_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_hospital_login"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_white"
+            android:padding="15dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_white"
+            android:padding="15dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Request Blood Button -->
+    <Button
+        android:id="@+id/btn_request_blood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_login_register"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_button_red"
+        android:padding="15dp"
+        android:text="Request Blood"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

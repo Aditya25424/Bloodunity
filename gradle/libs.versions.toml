@@ -1,0 +1,51 @@
+[versions]
+agp = "8.7.0"
+android = "11.11.0"
+androidVersion = "10.15.1"
+annotation = "1.0.0"
+appcompatVersion = "1.6.1"
+cardview = "1.0.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+kotlinStdlib = "1.9.23"
+mapboxAndroid = "3.9.1"
+mapboxAndroidSdk = "9.7.2"
+mapboxSdkGeojson = "7.3.2"
+mapboxSdkGeojsonVersion = "6.0.0"
+mapboxSdkTurf = "6.0.0"
+mapsCompose = "11.11.0"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+playServicesLocation = "21.3.0"
+
+[libraries]
+android = { module = "com.mapbox.maps:android", version.ref = "android" }
+android-v10151 = { module = "com.mapbox.maps:android", version.ref = "androidVersion" }
+annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlinStdlib" }
+mapbox-android-sdk = { module = "com.mapbox.mapboxsdk:mapbox-android-sdk", version.ref = "mapboxAndroidSdk" }
+mapbox-sdk-core = { module = "com.mapbox.mapboxsdk:mapbox-sdk-core", version.ref = "mapboxSdkGeojson" }
+mapbox-sdk-geojson = { module = "com.mapbox.mapboxsdk:mapbox-sdk-geojson", version.ref = "mapboxSdkGeojson" }
+mapbox-sdk-geojson-v600 = { module = "com.mapbox.mapboxsdk:mapbox-sdk-geojson", version.ref = "mapboxSdkGeojsonVersion" }
+mapbox-sdk-services = { module = "com.mapbox.mapboxsdk:mapbox-sdk-services", version.ref = "mapboxSdkGeojson" }
+mapbox-sdk-turf = { module = "com.mapbox.mapboxsdk:mapbox-sdk-turf", version.ref = "mapboxSdkGeojson" }
+mapbox-sdk-turf-v600 = { module = "com.mapbox.mapboxsdk:mapbox-sdk-turf", version.ref = "mapboxSdkTurf" }
+maps-compose = { module = "com.mapbox.extension:maps-compose", version.ref = "mapsCompose" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+navigationcore-android = { module = "com.mapbox.navigationcore:android", version.ref = "mapboxAndroid" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
